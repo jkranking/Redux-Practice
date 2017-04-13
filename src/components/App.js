@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react'
+import { Link, IndexLink } from 'react-router';
 import Header from './common/Header'
 
 export default class App extends Component {
@@ -6,13 +7,11 @@ export default class App extends Component {
 		return (
 			<div className="container-fluid">
 				<Header />
-				{this.props.children}
-			}
+					{this.props.children}
 			</div>
 		)
 	}
 }
-
 
 App.propTypes = {
   children: PropTypes.object.isRequired
